@@ -399,4 +399,99 @@
                 flex-direction: column;
                 text-align: center;
             }
+
         }
+/* Responsive tweaks */
+@media (max-width: 992px) {
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .hero p {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons a {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        gap: 10px;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        margin-bottom: 30px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.8rem, 8vw, 2.2rem);
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
